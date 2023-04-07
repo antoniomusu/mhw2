@@ -1,0 +1,135 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+body{
+    background-color: #E1EFE6;
+}
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choice-grid div {
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 10px auto;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc
+
+}
+
+
+
+.choice-grid img
+{    
+    padding: 10px;
+}
+
+.question-name{
+    margin: 10px 0px 10px 0px;
+    background-image: url("./arcobaleno.jpg");
+    background-size: cover;
+}
+
+#risultato
+{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 18px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#risultato button{
+    height: 50px;
+    width: 100%;
+    background-color: #cecece;
+    font-size: large;
+}
+
+#risultato button:hover{
+    background-color: #e0e0e0;
+}
+
+#risultato h1{
+    text-align:left;
+}
+
+.hide{
+    display:none !important; 
+}
+
+.footer {
+    position: relative;
+    background-color: #000411;
+    height: auto;
+    color: #E1EFE6;
+    line-height: 20px;
+    text-align: center;
+    padding: 2em 0;
+    border-top: solid #AEB7B3 3px;
+    margin-top: 4em;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+
+}
+
+.footer div{
+    font-weight:bolder;  
+}
+
+.footer img{
+    position: absolute;
+    width: 10em;
+    left: 20px;
+    bottom: 15px;
+    filter:invert(85%);
+}
+
+@media (max-width:700px)
+{
+    .question-name {
+        font-size: 0.3em;
+    }
+
+    article
+    {
+        width:95%;
+    }
+
+    header .circle{
+        display: none;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .footer img{
+        position: static;
+    }
+    
+}
+
+@media(max-width: 500px){
+    .choice-grid div {
+        width: 49%;
+    
+    }
+
+}
+
+.active {
+    background-color: #cfe3ff !important;
+}
+.inactive {
+    opacity: 0.6;
+}
