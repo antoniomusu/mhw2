@@ -22,9 +22,8 @@ function Restart(event){
         box.addEventListener('click', AnswerQuestions);    
     }
     window.scroll({top:0});
-    
-
- }
+    event.stopPropagation();
+}
 
 //Opzione 2: Funzione generalizzata che trova il numero di ripetizioni di una risposta
 function FindResult(){
@@ -133,6 +132,7 @@ function AnswerQuestions(event){
         const restartButton = document.querySelector("#risultato button");
         restartButton.addEventListener('click', Restart);
     }
+    event.stopPropagation();
 
 }
 
